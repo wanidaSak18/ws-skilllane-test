@@ -118,20 +118,6 @@ function App() {
             </div>
           </div>
         </div>
-
-        <div id="course-detail-page" className="theme-skilllane">
-          <div className="banner-course-detail _academic _tu-banner">
-            <div className="row">
-              <div className="col-xs-12 col-lg-11">
-                <div className="banner-course-detail-sub-header">
-                  <span className="academic-icon">
-                    <image src="https://skilllane.s3-ap-southeast-1.amazonaws.com/tu/icon-tuxsa.png"></image>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         {/* <Home /> */}
       </React.Fragment>
     </div>
