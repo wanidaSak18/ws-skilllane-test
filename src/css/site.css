@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;300&display=swap');
 /* banner */
 .banner-course-detail._academic._tu-banner {
     background-size: cover;
@@ -5,7 +6,7 @@
 }
 
 .banner-course-detail._academic {
-    height: 250px;
+    /* height: 250px; */
     padding-top: 35px;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -22,7 +23,8 @@
 }
 
 body.courses.show, body.course_bundles.show, body.courses.show_campaign, body.subscriptions.show, body.courses.masterclass {
-    font-family: thaisans_neueregular, Helvetica, sans-serif;
+    font-family: 'Prompt', sans-serif;
+    /* font-family: thaisans_neueregular, Helvetica, sans-serif; */
     font-size: 18px;
 }
 
@@ -42,10 +44,6 @@ body.courses.show, body.course_bundles.show, body.courses.show_campaign, body.su
 
 body.courses, body.courses.curriculum {
     font-size: 20px;
-}
-
-body {
-    font-family: thaisans_neueregular, Helvetica, sans-serif;
 }
 
 /* academic-icon */
@@ -191,24 +189,11 @@ h3 {
     font-weight: normal;
 }
 
-.theme-skilllane .banner-course-detail .banner-course-detail-footer .social-share-button .social-share-icon {
+.theme-skilllane .banner-course-detail .banner-course-detail-footer .social-share-button .social-share-text .social-share-icon {
     color: #00532a;
 }
 
-.banner-course-detail .banner-course-detail-footer .social-share-button .social-share-icon {
-    font-size: 14px;
-}
 
-span {
-    margin: 0;
-    border: 0;
-    outline: 0;
-    vertical-align: baseline;
-}
-
-.theme-skilllane .banner-course-detail .banner-course-detail-footer .social-share-button {
-    border-color: #00532a;
-}
 .banner-course-detail .banner-course-detail-footer .social-share-button {
     border-style: solid;
     border-radius: 2px;
@@ -218,13 +203,21 @@ span {
     float: left;
 }
 
-.theme-skilllane .banner-course-detail .banner-course-detail-footer .social-share-button .social-share-text {
-    color: #00532a;
+.banner-course-detail .banner-course-detail-footer .social-share-button .social-share-icon {
+    font-size: 14px;
 }
 
 .banner-course-detail .banner-course-detail-footer .social-share-button .social-share-text {
     font-size: 1em;
-}   
+} 
+
+span {
+    margin: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+ 
 
 svg:not(:root).svg-inline--fa {
     overflow: visible;
@@ -240,4 +233,24 @@ svg:not(:root).svg-inline--fa {
     height: 1em;
     overflow: visible;
     vertical-align: -.125em;
+}
+
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+
+.content-course.course-academic.none-credit-mode .video-container {
+    width: 50%;
+}
+
+.content-course .content-course-card {
+    min-height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.read-more-less--more,
+.read-more-less--less {
+  color: rgb(31, 156, 125);
 }

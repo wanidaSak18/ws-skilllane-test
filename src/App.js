@@ -1,34 +1,30 @@
 import React, { Component } from 'react'
 import logo from './logo.svg';
 import './App.css';
-
+import ReadMoreReact from 'read-more-react';
 import Home from './views/Home'
 
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+
+const minimumLength	= 80
+const idealLength=	100
+const maxLength	=200
+const readMoreText=	"read more"
+const readLessText=	"read less"
+const courseDetailText = 'นวัตกรรม (Innovation) เป็นสิ่งที่ทุกคนกำลังมองหา  เพราะไม่ว่าคุณจะเป็นพนักงานบริษัท ผู้บริหาร เจ้าของกิจการ หรือไม่ว่าจะทำสายอาชีพอะไรก็ตาม เราต่างอยากทำให้งานของเราออกมาดีขึ้น อยากทำงานให้น้อยแต่ได้ผลมาก และอยากสร้างผลงานที่สร้างผลกระทบที่ดีในวงกว้าง'
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>        
-      </header>       */}
       <React.Fragment>
+        {/* banner */}
         <div className="banner-course-detail _academic _tu-banner">
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-lg-11">
                 <div className="banner-course-detail-sub-header">
                   <span className="academic-icon">
-                    <img src="https://skilllane.s3-ap-southeast-1.amazonaws.com/tu/icon-tuxsa.png" />
+                    <image src="https://skilllane.s3-ap-southeast-1.amazonaws.com/tu/icon-tuxsa.png" />
                   </span>
                   หลักสูตรปริญญาโทออนไลน์
                 </div>
@@ -37,7 +33,7 @@ function App() {
                 </div>
                 <div className="banner-course-detail-degree">
                   <a
-                    href="/academic/tuxsa/businessinnovation"
+                    href="https://www.skilllane.com/academic/tuxsa/businessinnovation"
                     className="btn btn-degree"
                   >
                     ปริญญาโทบริหารธุรกิจ สาขา Business Innovation
@@ -47,31 +43,31 @@ function App() {
                   <div className="review-course-detail">
                     <div className="stars read-only">
                       <div className="star-svg-container filled">
-                        <img
+                        <image
                           className="star-svg"
                           src="https://www.skilllane.com/assets/raty/star-filled-625a2874bb73bbd9bc05639104f21c4e5563a3a5f3b933180ff4be08adeb9aad.svg"
                         />
                       </div>
                       <div className="star-svg-container filled">
-                        <img
+                        <image
                           className="star-svg"
                           src="https://www.skilllane.com/assets/raty/star-filled-625a2874bb73bbd9bc05639104f21c4e5563a3a5f3b933180ff4be08adeb9aad.svg"
                         />
                       </div>
                       <div className="star-svg-container filled">
-                        <img
+                        <image
                           className="star-svg"
                           src="https://www.skilllane.com/assets/raty/star-filled-625a2874bb73bbd9bc05639104f21c4e5563a3a5f3b933180ff4be08adeb9aad.svg"
                         />
                       </div>
                       <div className="star-svg-container filled">
-                        <img
+                        <image
                           className="star-svg"
                           src="https://www.skilllane.com/assets/raty/star-filled-625a2874bb73bbd9bc05639104f21c4e5563a3a5f3b933180ff4be08adeb9aad.svg"
                         />
                       </div>
                       <div className="star-svg-container">
-                        <img
+                        <image
                           className="star-svg"
                           src="https://www.skilllane.com/assets/raty/star-filled-625a2874bb73bbd9bc05639104f21c4e5563a3a5f3b933180ff4be08adeb9aad.svg"
                           style={{
@@ -118,7 +114,42 @@ function App() {
             </div>
           </div>
         </div>
+        {/* course-academic */}
+        <div class="content-course course-academic none-credit-mode">
+          <div class="container">
+            <div class="row content-course-row">
+              {/* video-container */}
+              <div class="video-container content-course-card -padding">
+                <div class="video preview-video-card">
+                  <image></image>
+                </div>
+              </div>
+              {/* course-audit-container */}
+              <div class="course-audit-container content-course-card -padding"></div>
+              {/* course-sidebar-container */}
+              <div class="course-sidebar-container content-course-card -relative"></div>
+            </div>
+          </div>
+        </div>
         {/* <Home /> */}
+        <Tabs>
+          <TabList>
+            <Tab>รายละเอียด</Tab>
+            <Tab>วิธีการชำระเงิน</Tab>
+            <Tab>ห้องสนทนา</Tab>
+            <Tab>ผู้สอน</Tab>
+          </TabList>
+          <TabPanel>
+            <ReadMoreReact
+              text={courseDetailText}
+              min={minimumLength}
+              ideal={idealLength}
+              max={maxLength}
+              readMoreText={readMoreText}
+              readLessText={readLessText}
+            />
+          </TabPanel>
+        </Tabs>
       </React.Fragment>
     </div>
   );
