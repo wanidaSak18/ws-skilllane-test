@@ -1,0 +1,243 @@
+/* banner */
+.banner-course-detail._academic._tu-banner {
+    background-size: cover;
+    background-image: url(https://skilllane.s3-ap-southeast-1.amazonaws.com/banner_academic/tu_banner.png);
+}
+
+.banner-course-detail._academic {
+    height: 250px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.theme-skilllane .banner-course-detail {
+    background-color: #fff;
+}
+
+.banner-course-detail {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+
+body.courses.show, body.course_bundles.show, body.courses.show_campaign, body.subscriptions.show, body.courses.masterclass {
+    font-family: thaisans_neueregular, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    overflow: visible;
+    margin: auto;
+}
+
+.container {
+    max-width: 1140px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+body.courses, body.courses.curriculum {
+    font-size: 20px;
+}
+
+body {
+    font-family: thaisans_neueregular, Helvetica, sans-serif;
+}
+
+/* academic-icon */
+.banner-course-detail._academic .banner-course-detail-sub-header .academic-icon {
+    display: inline-flex;
+    width: 55px;
+    height: 12px;
+}
+
+.banner-course-detail._academic .banner-course-detail-sub-header .academic-icon img {
+    width: 100%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+img {
+    border: 0;
+}
+
+/* banner-course-detail-sub-header */
+.banner-course-detail._academic .banner-course-detail-sub-header {
+    margin-bottom: 5px;
+    color: #d13434;
+}
+
+.banner-course-detail .banner-course-detail-header {
+    margin-bottom: 12px;
+}
+
+/* banner-course-detail-degree */
+.banner-course-detail._academic .banner-course-detail-degree {
+    margin-bottom: 10px;
+}
+
+/* degree:hover */
+.theme-skilllane .banner-course-detail._academic .banner-course-detail-degree .btn-degree:hover {
+    background: #00532a !important;
+    border-color: #00532a;
+}
+
+.banner-course-detail._academic .banner-course-detail-degree .btn-degree:hover {
+    color: #fff;
+    transition: .2s;
+}
+
+.banner-course-detail._academic .banner-course-detail-degree .btn-degree {
+    max-width: 100%;
+    color: #555;
+    border: 1px solid #555;
+    background: #fff;
+    border-radius: 20px;
+    padding: 3px 10px;
+    transition: .2s;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* course rating */
+.banner-course-detail .banner-course-detail-footer.-gutter-bottom {
+    margin-bottom: 12px;
+}
+
+.banner-course-detail .banner-course-detail-footer {
+    display: flex;
+    align-items: center;
+}
+
+.banner-course-detail .banner-course-detail-footer .review-course-detail {
+    margin-right: 8px;
+    display: inline-flex;
+}
+
+.banner-course-detail .banner-course-detail-footer .review-course-detail .stars {
+    margin-right: 8px;
+}
+
+.banner-course-detail .banner-course-detail-footer .review-course-detail .stars .star-svg-container {
+    line-height: 1;
+    height: 22px;
+}
+
+.star-svg-container {
+    float: left;
+    background-image: url(https://www.skilllane.com/assets/raty/star-stroke-5aa3077ffda78ce9885e9a11639d53f22c0fe35392066a7fdcb2a53bc404eb8f.svg);
+    background-repeat: no-repeat;
+    margin-right: 2px;
+}
+
+.star-svg-container .star-svg {
+    width: 22px;
+}
+
+/* rate review */
+.theme-skilllane .banner-course-detail .banner-course-detail-footer .review-course-detail h3 {
+    color: #8e8e8e;
+}
+
+.banner-course-detail .banner-course-detail-footer .review-course-detail h3 {
+    font-size: 1.33em;
+    font-weight: normal;
+}
+
+.theme-skilllane h3 {
+    color: #00532a;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+    color: #5c7635;
+}
+
+h3 {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.theme-skilllane .banner-course-detail .banner-course-detail-footer .social-share-button .social-share-icon {
+    color: #00532a;
+}
+
+.banner-course-detail .banner-course-detail-footer .social-share-button .social-share-icon {
+    font-size: 14px;
+}
+
+span {
+    margin: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+.theme-skilllane .banner-course-detail .banner-course-detail-footer .social-share-button {
+    border-color: #00532a;
+}
+.banner-course-detail .banner-course-detail-footer .social-share-button {
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    padding: 2px 8px;
+    width: 105px;
+    float: left;
+}
+
+.theme-skilllane .banner-course-detail .banner-course-detail-footer .social-share-button .social-share-text {
+    color: #00532a;
+}
+
+.banner-course-detail .banner-course-detail-footer .social-share-button .social-share-text {
+    font-size: 1em;
+}   
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: .875em;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
